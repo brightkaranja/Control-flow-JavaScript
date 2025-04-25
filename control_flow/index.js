@@ -110,6 +110,18 @@ gameCountdown(0)
   
   const ticketPriorities = ["high", "low", "medium", "critical"];
   processTicketPriority(ticketPriorities);
+
+  const quizCountdown = () => {
+    let timeLeft = 10;
+    while (timeLeft >= 0) {
+      console.log(`${timeLeft} seconds remaining`);
+      timeLeft--;
+    }
+    console.log("Time's up!");
+  }
+  
+  quizCountdown();
+  
   
   
   
